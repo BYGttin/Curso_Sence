@@ -1,0 +1,31 @@
+body {
+    background-color: lightblue;
+}
+
+h1, h3 {
+    color: crimson;
+    text-decoration:underline ;
+    font-family:cursive;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+img {
+    width: 250px;
+    height: 320px;
+    display: block;
+    margin: auto;
+    border-color: crimson;
+    border-radius: 50px;
+    border-style: double;
+    border-width: 5px;
+}
+
+aside, footer {
+    text-align: center;
+    font-size: 12px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
