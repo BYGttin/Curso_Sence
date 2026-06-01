@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./Assets/CSS/styles.css" >
+</head>
+<body class="p-5 text-center text-white">
+    <nav id="mainNavbar"class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><i class="fa-solid fa-circle-user" style="color: rgb(197, 24, 24);"></i> Sobre el Autor</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-book-open" style="color: rgb(197, 24, 24);"></i> Capitulos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fa-solid fa-user-secret" style="color: rgb(197, 24, 24);"></i> Personajes</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa-solid fa-book-atlas" style="color: rgb(197, 24, 24);"></i> Otros Libros
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">La chica del tren</a></li>
+            <li><a class="dropdown-item" href="#">Escrito en el Agua</a></li>
+            <li><a class="dropdown-item" href="#">A fuego lento</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true"><i class="fa-solid fa-feather" style="color: rgb(197, 24, 24);"></i> Reseñas</a>
+        </li>
+        <li>
+          <button class="btn text-danger" id="btnSwitch">Vista <i class="fa-solid fa-circle-half-stroke" style="color: rgb(197, 24, 24);"></i></button>
+        </li>
+      </ul>
+      <a class="d-flex">
+        <a href="https://www.buscalibre.cl/libros/autor/paula-hawkins?srsltid=AfmBOop10LMZhA2dEpMS_12G1J9HF5VGD5010sw-a9Ysdy7jCG4sDYDd" target="_blank"> 
+          <button id="themeBtn" class="btn btn-outline-danger" type="submit"  ><i class="fa-solid fa-folder-plus" style="color: rgb(197, 24, 24);"></i> Mas Libros</button>
+        </a>
+      </a>
+    </div>
+  </div>
+</nav>
+<header>
+    <br>
+        <h1>La chica del tren novela de Paula Hawkins</h1>
+    </header>
+    <section>
+        <article>
+          <br>
+            <h3>Premisa</h3>
+            <p>La historia sigue a Rachel, una mujer atrapada en una rutina gris tras 
+                un divorcio doloroso y la pérdida de su empleo. Cada mañana, toma el mismo tren 
+                de las 8:04 hacia Londres. El tren siempre se detiene ante una señal de tráfico obligatoria, 
+                justo detrás de una fila de casas suburbanas. En una de esas casas vive una pareja joven a la 
+                que Rachel, sin conocerlos, bautiza como "Jess y Jason". Al verlos desayunar en la terraza o reír juntos, 
+                se obsesiona con ellos y proyecta en sus vidas una idea de felicidad perfecta y amor idílico, algo que ella 
+                siente que ha perdido para siempre.</p>
+            <br>
+            <h3>Tonalidad</h3>
+            <p>Es oscuro, asfixiante y de ritmo muy ágil. No busca presentarte personajes perfectos ni heroicos; al contrario, 
+                todos tienen defectos profundos, secretos y debilidades, lo que hace que la intriga se vuelva mucho más turbia y realista.</p>
+                <div class="row justify-content-center">
+                  <div class="col-md-4 mb-2 text-center">
+                      <img src="./Assets/IMG/La_chica_del_Tren.jpg" style="width: 300px;" class="img-fluid img-thumbnail">
+                  </div>
+
+                  <div class="col-md-4 text-center">
+                      <img src="./Assets/IMG/Paula-Hawkins-Lloren-Osa-Edinburgh-Central- Library1-kOkB-U2201643341416oBD-1248x1248@MujerHoy.jpg" style="width: 410px;" class="img-fluid img-thumbnail">
+                  </div>
+                  </div>
+              </div>    
+        </article>
+        <br>
+        <aside>Año publicacion 2016 - Editorial Alfaguara</aside>
+    </section>
+    <a>
+      <button id="btn-arriba" class="btn btn-dark" ><i class="fa-solid fa-arrow-up" style="color: rgb(197, 24, 24);"></i>Volver al inicio </button>
+    </a>
+
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    <i class="fa-solid fa-gift" style="color: rgb(197, 24, 24);"></i>Aqui un regalo 
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Lee el libro o ve la pelicula</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <i class="fa-solid fa-gift" style="color: rgb(197, 24, 24);"></i><i class="fa-solid fa-gift" style="color: rgb(197, 24, 24);"></i>
+      </div>
+      <div class="modal-footer">
+        <a href="https://z-library.im/book/g5qnw0D2km/la-chica-del-tren.html" target="_blank">    
+          <button type="button"  class="btn btn-danger" data-bs-dismiss="modal">Leer el libro</button>
+        </a>
+        <a href="https://cuevana.cz/pelicula/la-chica-del-tren" target="_blank">
+          <button type="button" class="btn btn-danger">Ver la pelicula</button>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./script.js" ></script>
+</body>
+</html>
