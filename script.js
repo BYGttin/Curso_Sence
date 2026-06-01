@@ -1,6 +1,7 @@
 const btnSwitch = document.getElementById("btnSwitch");
 const navbar = document.getElementById("mainNavbar");
 const botonIrArriba = document.getElementById('btn-arriba');
+const botonRegalo = document.getElementById('btn-regalo');
 
 btnSwitch.addEventListener("click", () => {
 
@@ -18,6 +19,9 @@ btnSwitch.addEventListener("click", () => {
         botonIrArriba.classList.remove("btn-dark");
         botonIrArriba.classList.add("btn-light");
 
+        botonRegalo.classList.remove("btn-dark");
+        botonRegalo.classList.add("btn-light");
+
     } else {
 
         html.setAttribute("data-bs-theme", "dark");
@@ -27,6 +31,9 @@ btnSwitch.addEventListener("click", () => {
 
         botonIrArriba.classList.remove("btn-light");
         botonIrArriba.classList.add("btn-dark");
+
+        botonRegalo.classList.remove("btn-light");
+        botonRegalo.classList.add("btn-dark");
 
     }
 });
