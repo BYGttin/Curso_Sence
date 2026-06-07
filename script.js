@@ -2,6 +2,9 @@ const btnSwitch = document.getElementById("btnSwitch");
 const navbar = document.getElementById("mainNavbar");
 const botonIrArriba = document.getElementById('btn-arriba');
 const botonRegalo = document.getElementById('btn-regalo');
+const btnImagen = document.getElementById('btn-attr');
+const miImagen =document.getElementById('mi-imagen');
+const miImagen2 =document.getElementById('mi-imagen2');
 
 btnSwitch.addEventListener("click", () => {
 
@@ -46,4 +49,52 @@ botonIrArriba.addEventListener('click', () => {
         top: 0,
         behavior: 'smooth'
     });
+});
+
+
+$(document).ready(function () {
+
+    $('#btn-attr').click(function () {
+
+        if ($('#mi-imagen').attr('src') === './Assets/IMG/La_chica_del_Tren.jpg') {
+
+            $('#mi-imagen').attr('src', './Assets/IMG/PXL_20250718_015847405.PORTRAIT-1-scaled.jpg');
+            $('#mi-imagen2').attr('src', './Assets/IMG/5757.webp');
+
+            $('#caja-texto').html('<b>Año publicacion 2016 - Editorial Alfaguara</b>');
+
+        } else {
+
+            $('#mi-imagen').attr('src', './Assets/IMG/La_chica_del_Tren.jpg');
+            $('#mi-imagen2').attr('src', './Assets/IMG/Paula-Hawkins-Lloren-Osa-Edinburgh-Central-Library1-kOkB-U2201643341416oBD-1248x1248@MujerHoy.jpg');
+
+            $('#caja-texto').html('Texto normal');
+
+        }
+    });
+
+});
+
+$(document).ready(function () {
+
+    $('#btn-append').click(function () {
+
+        let titulo = $('#mi-input').val();
+
+        $('#mi-input').before(
+            `<li><a class="dropdown-item" href="#">${titulo}</a></li>`
+        );
+
+    });
+
+    $('#btn-prepend').click(function () {
+
+        let titulo = $('#mi-input').val();
+
+        $('#mi-lista').prepend(
+            `<li><a class="dropdown-item" href="#">${titulo}</a></li>`
+        );
+
+    });
+
 });
